@@ -1,0 +1,6 @@
+package Base;
+ message Call
+ {
+     required string msgname = 1;
+     required bytes buf = 2;
+ }

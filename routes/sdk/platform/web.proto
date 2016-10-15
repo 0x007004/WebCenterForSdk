@@ -1,0 +1,33 @@
+package web;
+message NotifyGameServer
+{
+    required string orderid = 1;
+    optional uint32 pid = 2;
+    optional uint32 otherinfo = 3;
+}
+message NotifyGameServerR
+{
+    required string result = 1;
+    required string orderid = 2;
+    required uint32 pid = 3;
+}
+message chkLogin{
+    required string token = 1;
+    optional uint32 pid = 2;
+    optional uint32 platform = 3;
+}
+message chkLoginR{
+    required bool result = 1;
+}
+
+message frntGetOrderid
+{
+    required uint32 groupid =1;
+    required uint32 serverid = 2;
+    required uint32 playerid = 3;
+    required uint32 money = 4;
+}
+message frntGetOrderidR
+{
+    optional string orderid = 1;
+}

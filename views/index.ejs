@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= appname %></p>
+<form method="post" action="/Login">
+  <div>UserName:</div><input type="text" name="username" />
+  <div>PWD:</div><input type="password" name="password" />
+  <input type="submit" name="submit" />
+</form>
+</body>
+</html>
